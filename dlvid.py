@@ -12,6 +12,7 @@ from selenium.webdriver.common.by import By
 import time 
 import dl as down
 import sys
+import os
 
 user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.50 Safari/537.36'
 
@@ -23,7 +24,7 @@ chromeOptions.add_argument("--mute-audio")
 capa = DesiredCapabilities.CHROME
 capa["pageLoadStrategy"] = "none"
 
-driver = webdriver.Chrome("/Users/QuanhaoLi/Desktop/dlvid/chromedriver", chrome_options=chromeOptions, desired_capabilities=capa)
+driver = webdriver.Chrome(os.getcwd() + "/chromedriver", chrome_options=chromeOptions, desired_capabilities=capa)
 
 wait = WebDriverWait(driver, 20)
 driver.get("http://kissasian.es/")
