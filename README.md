@@ -1,4 +1,4 @@
-# KDramaDownload
+# Asian Drama Download
 
 This program uses webscraping (Selenium) to find dramas and downloads the episodes you want to watch.
 
